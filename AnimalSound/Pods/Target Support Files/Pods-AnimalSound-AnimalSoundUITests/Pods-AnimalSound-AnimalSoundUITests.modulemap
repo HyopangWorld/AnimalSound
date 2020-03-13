@@ -1,0 +1,6 @@
+framework module Pods_AnimalSound_AnimalSoundUITests {
+  umbrella header "Pods-AnimalSound-AnimalSoundUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

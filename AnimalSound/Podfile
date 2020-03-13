@@ -1,0 +1,33 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'AnimalSound' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for AnimalSound
+  # RxSwift + Dependencies
+  pod 'RxSwift', '~> 5.1.0'      # https://github.com/ReactiveX/RxSwift
+  pod 'RxCocoa', '~> 5.1.0'      # https://github.com/ReactiveX/RxSwift
+  pod 'RxOptional', '~> 4.1.0'   # https://github.com/RxSwiftCommunity/RxOptional
+  pod 'RxAppState', '~> 1.6.0'   # https://github.com/pixeldock/RxAppState
+  pod 'RxDataSources', '~> 4.0'  # https://github.com/RxSwiftCommunity/RxDataSources
+  pod 'RxGesture', '~> 3.0.1'    # https://github.com/RxSwiftCommunity/RxGesture
+
+  # UI (Autolayout, Image, Label)
+  pod 'SnapKit', '~> 5.0.1'       # https://github.com/SnapKit/SnapKit
+
+  # Other Swift Utilites
+  pod 'Then', '~> 2.6.0'     # https://github.com/devxoul/Then
+  pod 'SwiftLint'            # https://github.com/realm/SwiftLint
+
+  target 'AnimalSoundTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AnimalSoundUITests' do
+    # Pods for testing
+  end
+
+end

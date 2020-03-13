@@ -3,18 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		31000C2327E7F9BBBDB9D78C /* Pods_AnimalSoundTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB870D17C28C20CB91516615 /* Pods_AnimalSoundTests.framework */; };
+		8446340CBA438A843A711446 /* Pods_AnimalSound.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */; };
 		DD12B42D241B3E5900BAE6E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */; };
 		DD12B42F241B3E5900BAE6E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B42E241B3E5900BAE6E0 /* SceneDelegate.swift */; };
 		DD12B431241B3E5900BAE6E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B430241B3E5900BAE6E0 /* ViewController.swift */; };
-		DD12B434241B3E5900BAE6E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD12B432241B3E5900BAE6E0 /* Main.storyboard */; };
 		DD12B436241B3E5A00BAE6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD12B435241B3E5A00BAE6E0 /* Assets.xcassets */; };
 		DD12B439241B3E5A00BAE6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD12B437241B3E5A00BAE6E0 /* LaunchScreen.storyboard */; };
 		DD12B444241B3E5A00BAE6E0 /* AnimalSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B443241B3E5A00BAE6E0 /* AnimalSoundTests.swift */; };
 		DD12B44F241B3E5A00BAE6E0 /* AnimalSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B44E241B3E5A00BAE6E0 /* AnimalSoundUITests.swift */; };
+		DDAB46E0241B58550093075C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DDAB46DF241B58550093075C /* .swiftlint.yml */; };
+		E66E3ED0C5E21E28BBDD2528 /* Pods_AnimalSound_AnimalSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +38,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSound_AnimalSoundUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B183EECBF704AA0DC3A9FD9 /* Pods-AnimalSoundTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSoundTests.debug.xcconfig"; path = "Target Support Files/Pods-AnimalSoundTests/Pods-AnimalSoundTests.debug.xcconfig"; sourceTree = "<group>"; };
+		13A655407A45F11D874C6F39 /* Pods-AnimalSound.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSound.release.xcconfig"; path = "Target Support Files/Pods-AnimalSound/Pods-AnimalSound.release.xcconfig"; sourceTree = "<group>"; };
+		14CC17E683BD6C3CDE3C77EC /* Pods-AnimalSound-AnimalSoundUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSound-AnimalSoundUITests.debug.xcconfig"; path = "Target Support Files/Pods-AnimalSound-AnimalSoundUITests/Pods-AnimalSound-AnimalSoundUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6F82FAB257361244D5B840F1 /* Pods-AnimalSound.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSound.debug.xcconfig"; path = "Target Support Files/Pods-AnimalSound/Pods-AnimalSound.debug.xcconfig"; sourceTree = "<group>"; };
+		BB870D17C28C20CB91516615 /* Pods_AnimalSoundTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSoundTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C44364CFBDCF074EBADAFEDA /* Pods-AnimalSoundTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSoundTests.release.xcconfig"; path = "Target Support Files/Pods-AnimalSoundTests/Pods-AnimalSoundTests.release.xcconfig"; sourceTree = "<group>"; };
+		D45BEA1F1FC0938219DB01E1 /* Pods-AnimalSound-AnimalSoundUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimalSound-AnimalSoundUITests.release.xcconfig"; path = "Target Support Files/Pods-AnimalSound-AnimalSoundUITests/Pods-AnimalSound-AnimalSoundUITests.release.xcconfig"; sourceTree = "<group>"; };
 		DD12B429241B3E5900BAE6E0 /* AnimalSound.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalSound.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD12B42E241B3E5900BAE6E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DD12B430241B3E5900BAE6E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DD12B433241B3E5900BAE6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD12B435241B3E5A00BAE6E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD12B438241B3E5A00BAE6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD12B43A241B3E5A00BAE6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		DD12B44A241B3E5A00BAE6E0 /* AnimalSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD12B44E241B3E5A00BAE6E0 /* AnimalSoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSoundUITests.swift; sourceTree = "<group>"; };
 		DD12B450241B3E5A00BAE6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDAB46DF241B58550093075C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8446340CBA438A843A711446 /* Pods_AnimalSound.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31000C2327E7F9BBBDB9D78C /* Pods_AnimalSoundTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +84,33 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E66E3ED0C5E21E28BBDD2528 /* Pods_AnimalSound_AnimalSoundUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2EDCCE816869AEE50F552146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */,
+				0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */,
+				BB870D17C28C20CB91516615 /* Pods_AnimalSoundTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD12B420241B3E5900BAE6E0 = {
 			isa = PBXGroup;
 			children = (
+				DDAB46DF241B58550093075C /* .swiftlint.yml */,
 				DD12B42B241B3E5900BAE6E0 /* AnimalSound */,
 				DD12B442241B3E5A00BAE6E0 /* AnimalSoundTests */,
 				DD12B44D241B3E5A00BAE6E0 /* AnimalSoundUITests */,
 				DD12B42A241B3E5900BAE6E0 /* Products */,
+				EEC850A93CC2E6DE9A647740 /* Pods */,
+				2EDCCE816869AEE50F552146 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +127,9 @@
 		DD12B42B241B3E5900BAE6E0 /* AnimalSound */ = {
 			isa = PBXGroup;
 			children = (
-				DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */,
-				DD12B42E241B3E5900BAE6E0 /* SceneDelegate.swift */,
-				DD12B430241B3E5900BAE6E0 /* ViewController.swift */,
-				DD12B432241B3E5900BAE6E0 /* Main.storyboard */,
-				DD12B435241B3E5A00BAE6E0 /* Assets.xcassets */,
-				DD12B437241B3E5A00BAE6E0 /* LaunchScreen.storyboard */,
-				DD12B43A241B3E5A00BAE6E0 /* Info.plist */,
+				DDC048B7241B50C700A026BB /* Resource */,
+				DDC048B6241B50BA00A026BB /* Source */,
+				DDC048B5241B50B300A026BB /* Support */,
 			);
 			path = AnimalSound;
 			sourceTree = "<group>";
@@ -128,6 +152,46 @@
 			path = AnimalSoundUITests;
 			sourceTree = "<group>";
 		};
+		DDC048B5241B50B300A026BB /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DD12B43A241B3E5A00BAE6E0 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DDC048B6241B50BA00A026BB /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DD12B430241B3E5900BAE6E0 /* ViewController.swift */,
+				DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */,
+				DD12B42E241B3E5900BAE6E0 /* SceneDelegate.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		DDC048B7241B50C700A026BB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DD12B435241B3E5A00BAE6E0 /* Assets.xcassets */,
+				DD12B437241B3E5A00BAE6E0 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EEC850A93CC2E6DE9A647740 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F82FAB257361244D5B840F1 /* Pods-AnimalSound.debug.xcconfig */,
+				13A655407A45F11D874C6F39 /* Pods-AnimalSound.release.xcconfig */,
+				14CC17E683BD6C3CDE3C77EC /* Pods-AnimalSound-AnimalSoundUITests.debug.xcconfig */,
+				D45BEA1F1FC0938219DB01E1 /* Pods-AnimalSound-AnimalSoundUITests.release.xcconfig */,
+				0B183EECBF704AA0DC3A9FD9 /* Pods-AnimalSoundTests.debug.xcconfig */,
+				C44364CFBDCF074EBADAFEDA /* Pods-AnimalSoundTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD12B453241B3E5A00BAE6E0 /* Build configuration list for PBXNativeTarget "AnimalSound" */;
 			buildPhases = (
+				C466773353693C8CCDB3515D /* [CP] Check Pods Manifest.lock */,
 				DD12B425241B3E5900BAE6E0 /* Sources */,
 				DD12B426241B3E5900BAE6E0 /* Frameworks */,
 				DD12B427241B3E5900BAE6E0 /* Resources */,
+				5D64959F95CD36CC93AA09FA /* [CP] Embed Pods Frameworks */,
+				DDAB46DE241B58080093075C /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -152,6 +219,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD12B456241B3E5A00BAE6E0 /* Build configuration list for PBXNativeTarget "AnimalSoundTests" */;
 			buildPhases = (
+				C7C443C5217B585B0795F792 /* [CP] Check Pods Manifest.lock */,
 				DD12B43B241B3E5A00BAE6E0 /* Sources */,
 				DD12B43C241B3E5A00BAE6E0 /* Frameworks */,
 				DD12B43D241B3E5A00BAE6E0 /* Resources */,
@@ -170,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD12B459241B3E5A00BAE6E0 /* Build configuration list for PBXNativeTarget "AnimalSoundUITests" */;
 			buildPhases = (
+				17B7CEA21DBC91045AF72044 /* [CP] Check Pods Manifest.lock */,
 				DD12B446241B3E5A00BAE6E0 /* Sources */,
 				DD12B447241B3E5A00BAE6E0 /* Frameworks */,
 				DD12B448241B3E5A00BAE6E0 /* Resources */,
+				3CE9B1EABC7B59E8879F11B0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,9 +302,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDAB46E0241B58550093075C /* .swiftlint.yml in Resources */,
 				DD12B439241B3E5A00BAE6E0 /* LaunchScreen.storyboard in Resources */,
 				DD12B436241B3E5A00BAE6E0 /* Assets.xcassets in Resources */,
-				DD12B434241B3E5900BAE6E0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +323,126 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17B7CEA21DBC91045AF72044 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalSound-AnimalSoundUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CE9B1EABC7B59E8879F11B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalSound-AnimalSoundUITests/Pods-AnimalSound-AnimalSoundUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalSound-AnimalSoundUITests/Pods-AnimalSound-AnimalSoundUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimalSound-AnimalSoundUITests/Pods-AnimalSound-AnimalSoundUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5D64959F95CD36CC93AA09FA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalSound/Pods-AnimalSound-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AnimalSound/Pods-AnimalSound-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AnimalSound/Pods-AnimalSound-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C466773353693C8CCDB3515D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalSound-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7C443C5217B585B0795F792 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimalSoundTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDAB46DE241B58080093075C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DD12B425241B3E5900BAE6E0 /* Sources */ = {
@@ -297,14 +487,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		DD12B432241B3E5900BAE6E0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DD12B433241B3E5900BAE6E0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DD12B437241B3E5A00BAE6E0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -432,11 +614,13 @@
 		};
 		DD12B454241B3E5A00BAE6E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F82FAB257361244D5B840F1 /* Pods-AnimalSound.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8M4ASV96;
-				INFOPLIST_FILE = AnimalSound/Info.plist;
+				INFOPLIST_FILE = AnimalSound/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,17 +628,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.AnimalSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		DD12B455241B3E5A00BAE6E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13A655407A45F11D874C6F39 /* Pods-AnimalSound.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6U8M4ASV96;
-				INFOPLIST_FILE = AnimalSound/Info.plist;
+				INFOPLIST_FILE = AnimalSound/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,12 +648,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyopangworld.AnimalSound;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		DD12B457241B3E5A00BAE6E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B183EECBF704AA0DC3A9FD9 /* Pods-AnimalSoundTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +677,7 @@
 		};
 		DD12B458241B3E5A00BAE6E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C44364CFBDCF074EBADAFEDA /* Pods-AnimalSoundTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +700,7 @@
 		};
 		DD12B45A241B3E5A00BAE6E0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14CC17E683BD6C3CDE3C77EC /* Pods-AnimalSound-AnimalSoundUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +721,7 @@
 		};
 		DD12B45B241B3E5A00BAE6E0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D45BEA1F1FC0938219DB01E1 /* Pods-AnimalSound-AnimalSoundUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
