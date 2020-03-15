@@ -16,7 +16,7 @@ import SnapKit
 
 protocol IndexViewBindable {
     var viewWillAppear: PublishRelay<Void> { get }
-    var deleteData: PublishRelay<Int> { get }
+    var deleteData: PublishRelay<Date> { get }
     var cellData: Driver<[AnimalListCell.CellData]> { get }
     var reloadList: Signal<Void> { get }
 }
@@ -25,7 +25,7 @@ final class IndexViewController: ViewController<IndexViewBindable> {
     
     let tableView = UITableView()
     
-    let deleteAnimal = PublishRelay<Int>()
+    let deleteAnimal = PublishRelay<Date>()
     
     override func bind(_ viewModel: IndexViewBindable) {
         self.disposeBag = DisposeBag()
@@ -101,7 +101,7 @@ extension IndexViewController {
 extension IndexViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "삭제") { [weak self] (_, indexPath) in
-            guard let cellDate = (self?.tableView.cellForRow(at: indexPath) as! AnimalListCell).id else { return }
+            guard let cellDate = (self?.tableView.cellForRow(at: indexPath) as! AnimalListCell).date else { return }
             self?.deleteAnimal.accept(cellDate)
         }
         

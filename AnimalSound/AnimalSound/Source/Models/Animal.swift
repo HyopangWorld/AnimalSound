@@ -9,7 +9,7 @@
 import Foundation
 
 struct Animal {
-    let id: Int
+    let date: Date
     var type: AnimalType
     var name: String
 }

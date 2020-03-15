@@ -24,6 +24,8 @@
 		DDC356C5241E3E5400DBDAF6 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C4241E3E5400DBDAF6 /* IndexModel.swift */; };
 		DDC356C8241E3F3000DBDAF6 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C7241E3F3000DBDAF6 /* Animal.swift */; };
 		DDC356CA241E3F5500DBDAF6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C9241E3F5500DBDAF6 /* Enums.swift */; };
+		DDC356CD241E468500DBDAF6 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356CC241E468500DBDAF6 /* UserDefaultsManager.swift */; };
+		DDC356CF241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */; };
 		DDFE5003241E36E8007641D7 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5002241E36E8007641D7 /* AnimalListCell.swift */; };
 		DDFE5006241E37A7007641D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5005241E37A7007641D7 /* Constants.swift */; };
 		E66E3ED0C5E21E28BBDD2528 /* Pods_AnimalSound_AnimalSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */; };
@@ -76,6 +78,8 @@
 		DDC356C4241E3E5400DBDAF6 /* IndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
 		DDC356C7241E3F3000DBDAF6 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		DDC356C9241E3F5500DBDAF6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		DDC356CC241E468500DBDAF6 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerImpl.swift; sourceTree = "<group>"; };
 		DDFE5002241E36E8007641D7 /* AnimalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCell.swift; sourceTree = "<group>"; };
 		DDFE5005241E37A7007641D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -202,6 +206,7 @@
 			children = (
 				DDFE5000241E3684007641D7 /* Views */,
 				DDC356C6241E3F1F00DBDAF6 /* Models */,
+				DDC356CB241E465D00DBDAF6 /* DataManager */,
 				DDFE5004241E3797007641D7 /* Constants */,
 				DDC356BC241E39E600DBDAF6 /* Extention */,
 				DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */,
@@ -241,6 +246,15 @@
 				DDC356C7241E3F3000DBDAF6 /* Animal.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DDC356CB241E465D00DBDAF6 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				DDC356CC241E468500DBDAF6 /* UserDefaultsManager.swift */,
+				DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		DDFE5000241E3684007641D7 /* Views */ = {
@@ -543,10 +557,12 @@
 				DDC356C8241E3F3000DBDAF6 /* Animal.swift in Sources */,
 				DD12B431241B3E5900BAE6E0 /* IndexViewController.swift in Sources */,
 				DD12B42D241B3E5900BAE6E0 /* AppDelegate.swift in Sources */,
+				DDC356CD241E468500DBDAF6 /* UserDefaultsManager.swift in Sources */,
 				DDC356C1241E3DC400DBDAF6 /* AddViewController.swift in Sources */,
 				DDC356BE241E3A1800DBDAF6 /* UIViewController+Utils.swift in Sources */,
 				DDC356C5241E3E5400DBDAF6 /* IndexModel.swift in Sources */,
 				DDFE5003241E36E8007641D7 /* AnimalListCell.swift in Sources */,
+				DDC356CF241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift in Sources */,
 				DDC356C3241E3E4A00DBDAF6 /* IndexViewModel.swift in Sources */,
 				DDAB46E5241B5DC20093075C /* ViewController.swift in Sources */,
 				DD12B42F241B3E5900BAE6E0 /* SceneDelegate.swift in Sources */,

@@ -12,7 +12,7 @@ import RxOptional
 
 struct IndexViewModel: IndexViewBindable {
     let viewWillAppear = PublishRelay<Void>()
-    let deleteData = PublishRelay<Int>()
+    let deleteData = PublishRelay<Date>()
     let cellData: Driver<[AnimalListCell.CellData]>
     let reloadList: Signal<Void>
     

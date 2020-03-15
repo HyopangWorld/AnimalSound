@@ -14,13 +14,13 @@ import Kingfisher
 import Then
 
 class AnimalListCell: UITableViewCell {
-    typealias CellData = (id: Int, type: AnimalType, name: String)
+    typealias CellData = (date: Date, type: AnimalType, name: String)
     private typealias UI = Constants.UI.IndexCell
     
     let typeLabel = UILabel()
     let nameLabel = UILabel()
     
-    var id: Int?
+    var date: Date?
     var type: AnimalType?
     
     override init(style: UITableViewCell.CellStyle = .default, reuseIdentifier: String?) {
@@ -39,7 +39,7 @@ class AnimalListCell: UITableViewCell {
     }
     
     func setData(data: CellData) {
-        id = data.id
+        date = data.date
         type = data.type
         typeLabel.text = "\(data.type)"
         nameLabel.text = data.name

@@ -18,21 +18,21 @@ struct IndexModel {
         return []
     }
     
-    func deleteAnimal(id: Int) -> [Animal]? {
+    func deleteAnimal(date: Date) -> [Animal]? {
         return []
     }
     
     func parseAnimal(animalList: [Animal]) -> [AnimalListCell.CellData] {
-        return sortAsce(list: animalList).map { (id: $0.id,
+        return sortAsce(list: animalList).map { (date: $0.date,
                                type: $0.type,
                                name: $0.name) }
     }
     
     private func sortDesc(list: [Animal]) -> [Animal] {
-        return list.sorted { $0.id < $1.id }
+        return list.sorted { $0.date < $1.date }
     }
     
     private func sortAsce(list: [Animal]) -> [Animal] {
-        return list.sorted { $0.id > $1.id }
+        return list.sorted { $0.date > $1.date }
     }
 }
