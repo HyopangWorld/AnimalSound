@@ -19,6 +19,7 @@ class AnimalListCell: UITableViewCell {
     
     let typeLabel = UILabel()
     let nameLabel = UILabel()
+    let emojiLabel = UILabel()
     
     var date: Date?
     var type: AnimalType?
@@ -36,30 +37,41 @@ class AnimalListCell: UITableViewCell {
     override func prepareForReuse() {
         typeLabel.text = nil
         nameLabel.text = nil
+        emojiLabel.text = nil
     }
     
     func setData(data: CellData) {
         date = data.date
         type = data.type
         typeLabel.text = data.type.getAnimalName()
+        emojiLabel.text = data.type.getAnimalEmoji()
         nameLabel.text = data.name
     }
     
     private func layout() {
         self.backgroundColor = Constants.UI.Base.backgroundColor
         
-        nameLabel.font = UI.nameFont
-        self.addSubview(nameLabel)
-        nameLabel.snp.makeConstraints {
+        emojiLabel.font = UI.emojiFont
+        self.addSubview(emojiLabel)
+        emojiLabel.snp.makeConstraints {
             $0.leading.equalToSuperview().inset(UI.sideMargin)
-            $0.width.equalToSuperview().dividedBy(2)
-            $0.centerY.equalToSuperview()
+            $0.width.equalTo(UI.emojiHeight)
+            $0.height.equalToSuperview()
         }
         
         typeLabel.font = UI.typeFont
         self.addSubview(typeLabel)
         typeLabel.snp.makeConstraints {
             $0.trailing.equalToSuperview().inset(UI.sideMargin)
+            $0.width.equalTo(UI.typeHeight)
+            $0.centerY.equalToSuperview()
+        }
+        
+        nameLabel.font = UI.nameFont
+        self.addSubview(nameLabel)
+        nameLabel.snp.makeConstraints {
+            $0.leading.equalTo(emojiLabel.snp.trailing).offset(UI.sideMargin)
+            $0.trailing.equalTo(typeLabel.snp.leading).inset(UI.sideMargin)
             $0.centerY.equalToSuperview()
         }
     }

@@ -65,9 +65,8 @@ extension AddViewController {
         view.addSubview(typePicker)
         typePicker.snp.makeConstraints {
             $0.top.equalTo(noticeLabel.snp.bottom)
-            $0.leading.equalToSuperview().inset(10)
-            $0.width.equalTo(50)
-            $0.height.equalTo(50)
+            $0.leading.equalToSuperview().inset(UI.typePickerSide)
+            $0.width.height.equalTo(UI.typePickerSize)
         }
         
         let actionSheet = buildActionSheet()
@@ -90,8 +89,8 @@ extension AddViewController {
         view.addSubview(nameTextField)
         nameTextField.snp.makeConstraints {
             $0.top.equalTo(noticeLabel.snp.bottom)
-            $0.leading.trailing.equalToSuperview().inset(20)
-            $0.height.equalTo(50)
+            $0.leading.trailing.equalToSuperview().inset(UI.nameSide)
+            $0.height.equalTo(UI.nameHeight)
         }
         
         nameTextField.rx.text
@@ -111,10 +110,9 @@ extension AddViewController {
         
         view.addSubview(noticeLabel)
         noticeLabel.snp.makeConstraints {
-            $0.trailing.equalToSuperview()
-            $0.leading.equalToSuperview().offset(10)
+            $0.leading.trailing.equalToSuperview().offset(UI.noticeSide)
             $0.top.equalToSuperview().inset(self.getTopAreaHeight())
-            $0.height.equalTo(100)
+            $0.height.equalTo(UI.noticeHeight)
         }
     }
     

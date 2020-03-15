@@ -39,4 +39,17 @@ enum AnimalType: String {
             return nil
         }
     }
+    
+    func getAnimalEmoji() -> String {
+        switch self {
+        case .dog:
+            return "🐶"
+        case .cat:
+            return "🐱"
+        case .parrot:
+            return "🦜"
+        case .lizard:
+            return "🦎"
+        }
+    }
 }

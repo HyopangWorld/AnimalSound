@@ -24,17 +24,30 @@ public struct Constants {
             static let height: CGFloat = 65
             static let sideMargin: CGFloat = 20
             
+            static let emojiFont: UIFont = .systemFont(ofSize: 35)
+            static let emojiHeight: CGFloat = 50
+            
             static let nameFont: UIFont = .systemFont(ofSize: 20)
             static let nameColor: UIColor = UIColor(displayP3Red: (24/255), green: (24/255), blue: (24/255), alpha: 1)
             static let nameTopMargin: CGFloat = 5
             
             static let typeFont: UIFont = .systemFont(ofSize: 15)
             static let typeColor: UIColor = UIColor(displayP3Red: (180/255), green: (180/255), blue: (180/255), alpha: 1)
+            static let typeHeight: CGFloat = 50
         }
         
         struct Add {
             static let noticeFont: UIFont = .systemFont(ofSize: 35, weight: .bold)
             static let noticeColor: UIColor = UIColor(displayP3Red: (180/255), green: (180/255), blue: (180/255), alpha: 1)
+            
+            static let typePickerSide: CGFloat = 10
+            static let typePickerSize: CGFloat = 50
+            
+            static let nameSide: CGFloat = 20
+            static let nameHeight: CGFloat = 50
+            
+            static let noticeSide: CGFloat = 10
+            static let noticeHeight: CGFloat = 100
         }
     }
     
