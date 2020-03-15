@@ -16,7 +16,7 @@ import SnapKit
 
 protocol IndexViewBindable {
     var viewWillAppear: PublishRelay<Void> { get }
-    var deleteData: PublishRelay<Date> { get }
+    var deleteData: PublishRelay<Int> { get }
     var cellData: Driver<[AnimalListCell.CellData]> { get }
     var reloadList: Signal<Void> { get }
 }
@@ -24,6 +24,8 @@ protocol IndexViewBindable {
 final class IndexViewController: ViewController<IndexViewBindable> {
     
     let tableView = UITableView()
+    
+    let deleteAnimal = PublishRelay<Int>()
     
     override func bind(_ viewModel: IndexViewBindable) {
         self.disposeBag = DisposeBag()
@@ -42,11 +44,16 @@ final class IndexViewController: ViewController<IndexViewBindable> {
         viewModel.reloadList
             .emit(onNext: { [weak self] _ in self?.tableView.reloadData() })
             .disposed(by: disposeBag)
+        
+        self.deleteAnimal
+            .bind(to: viewModel.deleteData)
+            .disposed(by: disposeBag)
     }
     
     override func layout() {
         navigationController?.navigationBar.barTintColor = Constants.UI.Base.backgroundColor
         navigationItem.title = "동물원 소리"
+        navigationItem.rightBarButtonItem = buildAddBtn()
         view.backgroundColor = Constants.UI.Base.backgroundColor
         
         buildMemoList()
@@ -69,13 +76,33 @@ extension IndexViewController {
             $0.top.equalToSuperview().offset(self.getTopAreaHeight())
         }
     }
+    
+    private func buildAddBtn() -> UIBarButtonItem {
+        let button = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+        
+        button.rx.tap
+        .subscribe(onNext: { [weak self] _ in
+            let addViewController = AddViewController()
+            self?.navigationController?.pushViewController(addViewController, animated: true)
+        })
+        .disposed(by: disposeBag)
+        
+        return button
+    }
+    
+    private func buildSoundAlert(type: AnimalType){
+        let alert = UIAlertController(title: "\(type)", message: type.getAniamlSoud(), preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 
 extension IndexViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let delete = UITableViewRowAction(style: .destructive, title: "삭제") { [weak self] (_, indexPath) in
             guard let cellDate = (self?.tableView.cellForRow(at: indexPath) as! AnimalListCell).id else { return }
-            
+            self?.deleteAnimal.accept(cellDate)
         }
         
         return [delete]
@@ -83,6 +110,10 @@ extension IndexViewController: UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? AnimalListCell else { return }
+        guard let type = cell.type else { return }
         
+        if type == AnimalType.lizard { return }
+        
+        buildSoundAlert(type: type)
     }
 }

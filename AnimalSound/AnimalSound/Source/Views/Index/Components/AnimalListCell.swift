@@ -14,12 +14,14 @@ import Kingfisher
 import Then
 
 class AnimalListCell: UITableViewCell {
-    typealias CellData = (id: Int, type: String, name: String)
+    typealias CellData = (id: Int, type: AnimalType, name: String)
+    private typealias UI = Constants.UI.IndexCell
     
     let typeLabel = UILabel()
     let nameLabel = UILabel()
     
     var id: Int?
+    var type: AnimalType?
     
     override init(style: UITableViewCell.CellStyle = .default, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -38,11 +40,27 @@ class AnimalListCell: UITableViewCell {
     
     func setData(data: CellData) {
         id = data.id
-        typeLabel.text = data.type
+        type = data.type
+        typeLabel.text = "\(data.type)"
         nameLabel.text = data.name
     }
     
     private func layout() {
         self.backgroundColor = Constants.UI.Base.backgroundColor
+        
+        nameLabel.font = UI.nameFont
+        self.addSubview(nameLabel)
+        nameLabel.snp.makeConstraints {
+            $0.leading.equalToSuperview().inset(UI.sideMargin)
+            $0.width.equalToSuperview().dividedBy(2)
+            $0.centerY.equalToSuperview()
+        }
+        
+        typeLabel.font = UI.typeFont
+        self.addSubview(typeLabel)
+        typeLabel.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(UI.sideMargin)
+            $0.centerY.equalToSuperview()
+        }
     }
 }

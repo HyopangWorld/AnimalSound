@@ -18,6 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         let rootViewController = IndexViewController()
+        let rootViewModel = IndexViewModel()
+        rootViewController.bind(rootViewModel)
         
         window?.makeKeyAndVisible()
         window?.windowScene = windowScene

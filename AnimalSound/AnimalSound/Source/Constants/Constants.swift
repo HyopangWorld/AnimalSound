@@ -23,6 +23,13 @@ public struct Constants {
         struct IndexCell {
             static let height: CGFloat = 65
             static let sideMargin: CGFloat = 20
+            
+            static let nameFont: UIFont = .systemFont(ofSize: 15)
+            static let nameColor: UIColor = UIColor(displayP3Red: (24/255), green: (24/255), blue: (24/255), alpha: 1)
+            static let nameTopMargin: CGFloat = 5
+            
+            static let typeFont: UIFont = .systemFont(ofSize: 14)
+            static let typeColor: UIColor = UIColor(displayP3Red: (180/255), green: (180/255), blue: (180/255), alpha: 1)
         }
     }
 }

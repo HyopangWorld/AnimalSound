@@ -19,6 +19,11 @@
 		DDAB46E0241B58550093075C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DDAB46DF241B58550093075C /* .swiftlint.yml */; };
 		DDAB46E5241B5DC20093075C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB46E4241B5DC20093075C /* ViewController.swift */; };
 		DDC356BE241E3A1800DBDAF6 /* UIViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356BD241E3A1800DBDAF6 /* UIViewController+Utils.swift */; };
+		DDC356C1241E3DC400DBDAF6 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C0241E3DC400DBDAF6 /* AddViewController.swift */; };
+		DDC356C3241E3E4A00DBDAF6 /* IndexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C2241E3E4A00DBDAF6 /* IndexViewModel.swift */; };
+		DDC356C5241E3E5400DBDAF6 /* IndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C4241E3E5400DBDAF6 /* IndexModel.swift */; };
+		DDC356C8241E3F3000DBDAF6 /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C7241E3F3000DBDAF6 /* Animal.swift */; };
+		DDC356CA241E3F5500DBDAF6 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356C9241E3F5500DBDAF6 /* Enums.swift */; };
 		DDFE5003241E36E8007641D7 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5002241E36E8007641D7 /* AnimalListCell.swift */; };
 		DDFE5006241E37A7007641D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5005241E37A7007641D7 /* Constants.swift */; };
 		E66E3ED0C5E21E28BBDD2528 /* Pods_AnimalSound_AnimalSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */; };
@@ -66,6 +71,11 @@
 		DDAB46DF241B58550093075C /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		DDAB46E4241B5DC20093075C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DDC356BD241E3A1800DBDAF6 /* UIViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utils.swift"; sourceTree = "<group>"; };
+		DDC356C0241E3DC400DBDAF6 /* AddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		DDC356C2241E3E4A00DBDAF6 /* IndexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexViewModel.swift; sourceTree = "<group>"; };
+		DDC356C4241E3E5400DBDAF6 /* IndexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexModel.swift; sourceTree = "<group>"; };
+		DDC356C7241E3F3000DBDAF6 /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
+		DDC356C9241E3F5500DBDAF6 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
 		DDFE5002241E36E8007641D7 /* AnimalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCell.swift; sourceTree = "<group>"; };
 		DDFE5005241E37A7007641D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -165,6 +175,8 @@
 			children = (
 				DDFE5001241E36D5007641D7 /* Components */,
 				DD12B430241B3E5900BAE6E0 /* IndexViewController.swift */,
+				DDC356C2241E3E4A00DBDAF6 /* IndexViewModel.swift */,
+				DDC356C4241E3E5400DBDAF6 /* IndexModel.swift */,
 			);
 			path = Index;
 			sourceTree = "<group>";
@@ -189,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFE5000241E3684007641D7 /* Views */,
+				DDC356C6241E3F1F00DBDAF6 /* Models */,
 				DDFE5004241E3797007641D7 /* Constants */,
 				DDC356BC241E39E600DBDAF6 /* Extention */,
 				DD12B42C241B3E5900BAE6E0 /* AppDelegate.swift */,
@@ -214,11 +227,28 @@
 			path = Extention;
 			sourceTree = "<group>";
 		};
+		DDC356BF241E3DB600DBDAF6 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				DDC356C0241E3DC400DBDAF6 /* AddViewController.swift */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		DDC356C6241E3F1F00DBDAF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DDC356C7241E3F3000DBDAF6 /* Animal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		DDFE5000241E3684007641D7 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				DDAB46E2241B5DA30093075C /* Common Components */,
 				DDAB46E1241B5D7B0093075C /* Index */,
+				DDC356BF241E3DB600DBDAF6 /* Add */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -235,6 +265,7 @@
 			isa = PBXGroup;
 			children = (
 				DDFE5005241E37A7007641D7 /* Constants.swift */,
+				DDC356C9241E3F5500DBDAF6 /* Enums.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -509,12 +540,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDC356C8241E3F3000DBDAF6 /* Animal.swift in Sources */,
 				DD12B431241B3E5900BAE6E0 /* IndexViewController.swift in Sources */,
 				DD12B42D241B3E5900BAE6E0 /* AppDelegate.swift in Sources */,
+				DDC356C1241E3DC400DBDAF6 /* AddViewController.swift in Sources */,
 				DDC356BE241E3A1800DBDAF6 /* UIViewController+Utils.swift in Sources */,
+				DDC356C5241E3E5400DBDAF6 /* IndexModel.swift in Sources */,
 				DDFE5003241E36E8007641D7 /* AnimalListCell.swift in Sources */,
+				DDC356C3241E3E4A00DBDAF6 /* IndexViewModel.swift in Sources */,
 				DDAB46E5241B5DC20093075C /* ViewController.swift in Sources */,
 				DD12B42F241B3E5900BAE6E0 /* SceneDelegate.swift in Sources */,
+				DDC356CA241E3F5500DBDAF6 /* Enums.swift in Sources */,
 				DDFE5006241E37A7007641D7 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
