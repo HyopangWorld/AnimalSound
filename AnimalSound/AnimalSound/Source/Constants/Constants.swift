@@ -24,12 +24,24 @@ public struct Constants {
             static let height: CGFloat = 65
             static let sideMargin: CGFloat = 20
             
-            static let nameFont: UIFont = .systemFont(ofSize: 15)
+            static let nameFont: UIFont = .systemFont(ofSize: 20)
             static let nameColor: UIColor = UIColor(displayP3Red: (24/255), green: (24/255), blue: (24/255), alpha: 1)
             static let nameTopMargin: CGFloat = 5
             
-            static let typeFont: UIFont = .systemFont(ofSize: 14)
+            static let typeFont: UIFont = .systemFont(ofSize: 15)
             static let typeColor: UIColor = UIColor(displayP3Red: (180/255), green: (180/255), blue: (180/255), alpha: 1)
+        }
+        
+        struct Add {
+            static let noticeFont: UIFont = .systemFont(ofSize: 35, weight: .bold)
+            static let noticeColor: UIColor = UIColor(displayP3Red: (180/255), green: (180/255), blue: (180/255), alpha: 1)
+        }
+    }
+    
+    struct TEXT {
+        struct Add {
+            static let typeNotice = "이 동물은 어떤 종류인가요?"
+            static let nameNotice = "의 이름은 무엇인가요?"
         }
     }
 }

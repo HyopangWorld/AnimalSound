@@ -41,7 +41,7 @@ class AnimalListCell: UITableViewCell {
     func setData(data: CellData) {
         date = data.date
         type = data.type
-        typeLabel.text = "\(data.type)"
+        typeLabel.text = data.type.getAnimalName()
         nameLabel.text = data.name
     }
     

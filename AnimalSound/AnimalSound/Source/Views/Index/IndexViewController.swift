@@ -22,7 +22,6 @@ protocol IndexViewBindable {
 }
 
 final class IndexViewController: ViewController<IndexViewBindable> {
-    
     let tableView = UITableView()
     
     let deleteAnimal = PublishRelay<Date>()
@@ -52,7 +51,7 @@ final class IndexViewController: ViewController<IndexViewBindable> {
     
     override func layout() {
         navigationController?.navigationBar.barTintColor = Constants.UI.Base.backgroundColor
-        navigationItem.title = "동물원 소리"
+        navigationItem.title = "동물원"
         navigationItem.rightBarButtonItem = buildAddBtn()
         view.backgroundColor = Constants.UI.Base.backgroundColor
         
@@ -72,8 +71,7 @@ extension IndexViewController {
         }
         view.addSubview(tableView)
         tableView.snp.makeConstraints {
-            $0.leading.trailing.bottom.equalToSuperview()
-            $0.top.equalToSuperview().offset(self.getTopAreaHeight())
+            $0.edges.equalToSuperview()
         }
     }
     
@@ -83,6 +81,8 @@ extension IndexViewController {
         button.rx.tap
         .subscribe(onNext: { [weak self] _ in
             let addViewController = AddViewController()
+            let addViewModel = AddViewModel()
+            addViewController.bind(addViewModel)
             self?.navigationController?.pushViewController(addViewController, animated: true)
         })
         .disposed(by: disposeBag)
@@ -91,7 +91,7 @@ extension IndexViewController {
     }
     
     private func buildSoundAlert(type: AnimalType){
-        let alert = UIAlertController(title: "\(type)", message: type.getAniamlSoud(), preferredStyle: .alert)
+        let alert = UIAlertController(title: nil, message: type.getAnimalSound(), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "확인", style: .default, handler: nil))
         
         self.present(alert, animated: true, completion: nil)
@@ -111,7 +111,6 @@ extension IndexViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let cell = tableView.cellForRow(at: indexPath) as? AnimalListCell else { return }
         guard let type = cell.type else { return }
-        
         if type == AnimalType.lizard { return }
         
         buildSoundAlert(type: type)

@@ -10,6 +10,6 @@ import Foundation
 
 protocol UserDefaultsManager {
     func getAnimalList() -> [Animal]?
-    func removeMemo(date: Date) -> [Animal]?
-    func getId() -> Date
+    func saveAnimal(animal: Animal) -> [Animal]?
+    func removeAnimal(date: Date) -> [Animal]?
 }

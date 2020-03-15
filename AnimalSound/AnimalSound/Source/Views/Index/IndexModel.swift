@@ -10,16 +10,18 @@ import Foundation
 import RxSwift
 
 struct IndexModel {
+    let userDefaultsManager: UserDefaultsManager
     
-    init() {
+    init(userDefaultsManager: UserDefaultsManager = UserDefaultsManagerImpl()) {
+        self.userDefaultsManager = userDefaultsManager
     }
     
     func getAnimalList() -> [Animal]? {
-        return []
+        return userDefaultsManager.getAnimalList()
     }
     
     func deleteAnimal(date: Date) -> [Animal]? {
-        return []
+        return userDefaultsManager.removeAnimal(date: date)
     }
     
     func parseAnimal(animalList: [Animal]) -> [AnimalListCell.CellData] {
