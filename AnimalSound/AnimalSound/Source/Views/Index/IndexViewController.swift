@@ -22,6 +22,7 @@ protocol IndexViewBindable {
 }
 
 final class IndexViewController: ViewController<IndexViewBindable> {
+    private typealias TEXT = Constants.TEXT.Index
     let tableView = UITableView()
     
     let deleteAnimal = PublishRelay<Date>()
@@ -51,7 +52,7 @@ final class IndexViewController: ViewController<IndexViewBindable> {
     
     override func layout() {
         navigationController?.navigationBar.barTintColor = Constants.UI.Base.backgroundColor
-        navigationItem.title = "동물원"
+        navigationItem.title = TEXT.title
         navigationItem.rightBarButtonItem = buildAddBtn()
         view.backgroundColor = Constants.UI.Base.backgroundColor
         

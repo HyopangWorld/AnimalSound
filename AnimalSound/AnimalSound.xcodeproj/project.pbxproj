@@ -14,7 +14,7 @@
 		DD12B431241B3E5900BAE6E0 /* IndexViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B430241B3E5900BAE6E0 /* IndexViewController.swift */; };
 		DD12B436241B3E5A00BAE6E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD12B435241B3E5A00BAE6E0 /* Assets.xcassets */; };
 		DD12B439241B3E5A00BAE6E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD12B437241B3E5A00BAE6E0 /* LaunchScreen.storyboard */; };
-		DD12B444241B3E5A00BAE6E0 /* AnimalSoundTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B443241B3E5A00BAE6E0 /* AnimalSoundTests.swift */; };
+		DD12B444241B3E5A00BAE6E0 /* IndexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B443241B3E5A00BAE6E0 /* IndexTests.swift */; };
 		DD12B44F241B3E5A00BAE6E0 /* AnimalSoundUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD12B44E241B3E5A00BAE6E0 /* AnimalSoundUITests.swift */; };
 		DDAB46E0241B58550093075C /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = DDAB46DF241B58550093075C /* .swiftlint.yml */; };
 		DDAB46E5241B5DC20093075C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDAB46E4241B5DC20093075C /* ViewController.swift */; };
@@ -28,6 +28,9 @@
 		DDC356CF241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */; };
 		DDC356D1241E945900DBDAF6 /* AddViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356D0241E945900DBDAF6 /* AddViewModel.swift */; };
 		DDC356D3241E946300DBDAF6 /* AddModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356D2241E946300DBDAF6 /* AddModel.swift */; };
+		DDC356D6241EA58000DBDAF6 /* AnimalDummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356D5241EA58000DBDAF6 /* AnimalDummyData.swift */; };
+		DDC356D8241EA63300DBDAF6 /* MockUpUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356D7241EA63300DBDAF6 /* MockUpUserDefaultsManager.swift */; };
+		DDC356DA241EA77100DBDAF6 /* AddTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDC356D9241EA77100DBDAF6 /* AddTests.swift */; };
 		DDFE5003241E36E8007641D7 /* AnimalListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5002241E36E8007641D7 /* AnimalListCell.swift */; };
 		DDFE5006241E37A7007641D7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFE5005241E37A7007641D7 /* Constants.swift */; };
 		E66E3ED0C5E21E28BBDD2528 /* Pods_AnimalSound_AnimalSoundUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0782E79ED3C270132C41EF6A /* Pods_AnimalSound_AnimalSoundUITests.framework */; };
@@ -67,7 +70,7 @@
 		DD12B438241B3E5A00BAE6E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD12B43A241B3E5A00BAE6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD12B43F241B3E5A00BAE6E0 /* AnimalSoundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalSoundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DD12B443241B3E5A00BAE6E0 /* AnimalSoundTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSoundTests.swift; sourceTree = "<group>"; };
+		DD12B443241B3E5A00BAE6E0 /* IndexTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexTests.swift; sourceTree = "<group>"; };
 		DD12B445241B3E5A00BAE6E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD12B44A241B3E5A00BAE6E0 /* AnimalSoundUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalSoundUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD12B44E241B3E5A00BAE6E0 /* AnimalSoundUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalSoundUITests.swift; sourceTree = "<group>"; };
@@ -84,6 +87,9 @@
 		DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManagerImpl.swift; sourceTree = "<group>"; };
 		DDC356D0241E945900DBDAF6 /* AddViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewModel.swift; sourceTree = "<group>"; };
 		DDC356D2241E946300DBDAF6 /* AddModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddModel.swift; sourceTree = "<group>"; };
+		DDC356D5241EA58000DBDAF6 /* AnimalDummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDummyData.swift; sourceTree = "<group>"; };
+		DDC356D7241EA63300DBDAF6 /* MockUpUserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUpUserDefaultsManager.swift; sourceTree = "<group>"; };
+		DDC356D9241EA77100DBDAF6 /* AddTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTests.swift; sourceTree = "<group>"; };
 		DDFE5002241E36E8007641D7 /* AnimalListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalListCell.swift; sourceTree = "<group>"; };
 		DDFE5005241E37A7007641D7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E30BB7D0A2B7107626900C65 /* Pods_AnimalSound.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimalSound.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +169,9 @@
 		DD12B442241B3E5A00BAE6E0 /* AnimalSoundTests */ = {
 			isa = PBXGroup;
 			children = (
-				DD12B443241B3E5A00BAE6E0 /* AnimalSoundTests.swift */,
+				DDC356D4241EA51800DBDAF6 /* Mock-Up */,
+				DD12B443241B3E5A00BAE6E0 /* IndexTests.swift */,
+				DDC356D9241EA77100DBDAF6 /* AddTests.swift */,
 				DD12B445241B3E5A00BAE6E0 /* Info.plist */,
 			);
 			path = AnimalSoundTests;
@@ -261,6 +269,15 @@
 				DDC356CE241E46F800DBDAF6 /* UserDefaultsManagerImpl.swift */,
 			);
 			path = DataManager;
+			sourceTree = "<group>";
+		};
+		DDC356D4241EA51800DBDAF6 /* Mock-Up */ = {
+			isa = PBXGroup;
+			children = (
+				DDC356D5241EA58000DBDAF6 /* AnimalDummyData.swift */,
+				DDC356D7241EA63300DBDAF6 /* MockUpUserDefaultsManager.swift */,
+			);
+			path = "Mock-Up";
 			sourceTree = "<group>";
 		};
 		DDFE5000241E3684007641D7 /* Views */ = {
@@ -583,7 +600,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD12B444241B3E5A00BAE6E0 /* AnimalSoundTests.swift in Sources */,
+				DDC356D8241EA63300DBDAF6 /* MockUpUserDefaultsManager.swift in Sources */,
+				DDC356DA241EA77100DBDAF6 /* AddTests.swift in Sources */,
+				DDC356D6241EA58000DBDAF6 /* AnimalDummyData.swift in Sources */,
+				DD12B444241B3E5A00BAE6E0 /* IndexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

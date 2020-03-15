@@ -52,6 +52,10 @@ public struct Constants {
     }
     
     struct TEXT {
+        struct Index {
+            static let title = "동물 관리"
+        }
+        
         struct Add {
             static let typeNotice = "이 동물은 어떤 종류인가요?"
             static let nameNotice = "의 이름은 무엇인가요?"
