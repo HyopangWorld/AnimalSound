@@ -47,7 +47,8 @@ enum AnimalType: String {
         case .cat:
             return "🐱"
         case .parrot:
-            return "🦜"
+            if #available(iOS 13.0, *) { return "🦜" }
+            return "🐦"
         case .lizard:
             return "🦎"
         }
