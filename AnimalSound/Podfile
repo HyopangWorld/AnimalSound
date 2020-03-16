@@ -20,6 +20,7 @@ target 'AnimalSound' do
   # Other Swift Utilites
   pod 'Then', '~> 2.6.0'     # https://github.com/devxoul/Then
   pod 'SwiftLint'            # https://github.com/realm/SwiftLint
+  pod 'KRWordWrapLabel', '~> 2.1.1'   # https://github.com/inkyfox/KRWordWrapLabel
 
   target 'AnimalSoundTests' do
     inherit! :search_paths

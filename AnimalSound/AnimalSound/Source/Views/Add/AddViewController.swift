@@ -9,6 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 import RxOptional
+import KRWordWrapLabel
 
 protocol AddViewBindable {
     var saveData: PublishRelay<Animal> { get }
@@ -19,7 +20,7 @@ final class AddViewController: ViewController<AddViewBindable> {
     private typealias UI = Constants.UI.Add
     private typealias TEXT = Constants.TEXT.Add
     
-    let noticeLabel = UILabel()
+    let noticeLabel = KRWordWrapLabel()
     let nameTextField = UITextField()
     let typePicker = UIButton()
     let doneButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: nil)
@@ -106,6 +107,8 @@ extension AddViewController {
             $0.text = text
             $0.font = UI.noticeFont
             $0.textColor = UI.noticeColor
+            $0.numberOfLines = 10
+            $0.lineBreakMode = .byWordWrapping
         }
         
         view.addSubview(noticeLabel)
